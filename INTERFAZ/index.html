@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet"> <!-- Tu archivo CSS personalizado -->
+    <title>Calculadora Acústica</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Calculadora Acústica</h1>
+
+
+        <form id="acousticForm">
+
+            <div class="form-group">
+                <input type="radio" id="opcionintensidad" name="opciones" onclick="textboxesIntensidad()" required>
+                <label for="opcionintensidad">Calculo intensidad</label><br>
+
+                <input type="radio" id="opcionpotencia" name="opciones" onclick="textboxesPotencia()" required>
+                <label for="opcionpotencia">Calculo potencia</label><br>
+
+                <input type="radio" id="opcionpotenciapresion" name="opciones" onclick="textboxesPotenciaPresion()" required>
+                <label for="opcionpotenciapresion">Calculo potencia CP</label><br>
+            </div>
+
+
+            <div id="campoArea" style="display: none;" class="form-group">
+                <label for="area">Area (A)</label>
+                <input type="number" class="form-control" id="area" required>
+            </div>
+
+            <div id="campoPotencia" style="display: none;" class="form-group">
+                <label for="potencia">Potencia Acústica (W)</label>
+                <input type="number" class="form-control" id="potencia" required>
+            </div>
+
+            <div id="campoIntensidad" style="display: none;" class="form-group">
+                <label for="intensidad">Intensidad (I)</label>
+                <input type="number" class="form-control" id="intensidad" required>
+            </div>
+
+            <div id="campoPresion" style="display: none;" class="form-group">
+                <label for="presion">Presión Sonora (Pa)</label>
+                <input type="number" class="form-control" id="presion">
+            </div>
+            <div id="campoDensidad" style="display: none;" class="form-group">
+                <label for="densidad">Densidad del Medio (kg/m³)</label>
+                <input type="number" class="form-control" id="densidad">
+            </div>
+            <div id="campoVelocidad" style="display: none;" class="form-group">
+                <label for="velocidad">Velocidad del Sonido (m/s)</label>
+                <input type="number" class="form-control" id="velocidad">
+            </div>
+
+
+            <div id="botonIntensidad" style="display: none;" class="form-group">
+                <button type="button" class="btn btn-primary" onclick="calcularIntensidad()">Intensidad</button>
+            </div>
+
+            <div id="botonPotencia" style="display: none;" class="form-group">
+                <button type="button" class="btn btn-secondary" onclick="calcularPotencia()">Potencia</button>
+            </div>
+
+            <div id="botonPotenciaPresion" style="display: none;" class="form-group">
+                <button type="button" class="btn btn-success" onclick="calcularPotenciaPresion()">Potencia con PS</button>
+            </div>
+
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

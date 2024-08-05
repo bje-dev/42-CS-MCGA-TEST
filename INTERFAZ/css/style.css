@@ -1,0 +1,49 @@
+﻿/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los campos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+.btn {
+    margin-right: 10px;
+}
+
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+/* Estilos para el resultado */
+#result {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Estilos adicionales específicos */
+/* Añade aquí cualquier otro estilo específico que necesites */
